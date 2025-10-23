@@ -1,9 +1,9 @@
 {
     "name": "FirstCache-Network",
     "short_name": "Gestor PWA",
-    "start_url": "https://nieobe-hernandez.github.io/FirstCache-Network/",
+    "start_url": "/FirstCache-Network/",
     "display": "standalone",
-    "background_color": "#1A202C",
+    "background_color": "#4A90E2",
     "theme_color": "#4A90E2",
     "description": "Primera aplicacion PWA con manejo de cache y red",
     "icons": [

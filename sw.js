@@ -2,16 +2,16 @@ const CACHE_NAME = "app-shell-v1";
 const DYNAMIC_CACHE = "dynamic-cache-v1";
 
 const ASSETS_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/calendar.html",
-  "/form.html",
-  "/main.js",
-  "/css/styles.css",
-  "/manifest.json",
-  "/images/icon/180.png",
-  "images/icon/192.png",
-  "images/icon/512.png",
+  "./",
+  "./index.html",
+  "./calendar.html",
+  "./form.html",
+  "./main.js",
+  "./css/styles.css",
+  "./manifest.json",
+  "./images/icon/180.png",
+  "./images/icon/192.png",
+  "./images/icon/512.png",
 ];
 
 self.addEventListener("install", event => {
