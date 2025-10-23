@@ -8,6 +8,10 @@ const ASSETS_TO_CACHE = [
   "/form.html",
   "/main.js",
   "/css/styles.css",
+  "/manifest.json",
+  "/images/icon/180.png",
+  "images/icon/192.png",
+  "images/icon/512.png",
 ];
 
 self.addEventListener("install", event => {
@@ -37,7 +41,8 @@ self.addEventListener("fetch", event => {
     url.includes("select2") ||
     url.includes("jquery") ||
     url.endsWith("calendar.html") ||
-    url.endsWith("form.html");
+    url.endsWith("form.html") ||
+    url.includes("index.global.min.js");
 
   if (isDynamicResource) {
     event.respondWith(networkFirst(event.request));
