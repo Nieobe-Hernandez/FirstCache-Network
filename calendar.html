@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendario</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/main.min.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="calendar.html">Calendario</a>
+    <a href="form.html">Formulario</a>
+  </nav>
+
+  <main>
+    <h1>Vista del Calendario</h1>
+    <div id="calendar"></div>
+  </main>
+
+  <script src="lib/index.global.min.js"></script>
+  <script src="main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const calendarEl = document.getElementById('calendar');
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth'
+      });
+      calendar.render();
+    });
+  </script>
+</body>
+</html>
